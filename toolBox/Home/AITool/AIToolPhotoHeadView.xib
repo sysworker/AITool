@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="AIToolPhotoHeadView" customModule="toolBox" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="592" height="247"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_Ai_bg" translatesAutoresizingMaskIntoConstraints="NO" id="tD5-7K-wCg">
+                    <rect key="frame" x="332" y="55" width="260" height="77"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="5U7-YD-FD1"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2w-SB-8Hh">
+                    <rect key="frame" x="392" y="99.666666666666671" width="164" height="36.000000000000014"/>
+                    <string key="text">上传照片，一键创作生成
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.98347730700000002" green="0.54441652100000004" blue="0.83801354900000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI 照片" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtR-f4-Ngc">
+                    <rect key="frame" x="362" y="65" width="90" height="34.666666666666657"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                    <color key="textColor" red="0.93725490199999995" green="0.42280697239999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" prefetchingEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhd-tE-UJO">
+                    <rect key="frame" x="12" y="136" width="568" height="111"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NUK-lo-7sB">
+                        <size key="itemSize" width="70" height="70"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="singlesome" translatesAutoresizingMaskIntoConstraints="NO" id="vTe-Ka-sCg">
+                    <rect key="frame" x="11" y="10" width="147" height="62"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="62" id="8CV-fd-XVk"/>
+                        <constraint firstAttribute="width" constant="147" id="SGF-F4-Xbn"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="nhd-tE-UJO" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="12" id="38B-6n-50e"/>
+                <constraint firstItem="nhd-tE-UJO" firstAttribute="top" secondItem="tD5-7K-wCg" secondAttribute="bottom" constant="4" id="Mwj-a9-b5s"/>
+                <constraint firstItem="tD5-7K-wCg" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="55" id="Sep-1K-pRm"/>
+                <constraint firstItem="vTe-Ka-sCg" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="11" id="XnD-uU-Y8R"/>
+                <constraint firstAttribute="trailing" secondItem="tD5-7K-wCg" secondAttribute="trailing" id="Zdk-2I-nPj"/>
+                <constraint firstItem="vTe-Ka-sCg" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="10" id="bUy-Qy-S80"/>
+                <constraint firstAttribute="bottom" secondItem="nhd-tE-UJO" secondAttribute="bottom" id="cTt-xJ-Ky0"/>
+                <constraint firstAttribute="trailing" secondItem="nhd-tE-UJO" secondAttribute="trailing" constant="12" id="h0K-JR-Zax"/>
+                <constraint firstItem="V2w-SB-8Hh" firstAttribute="top" secondItem="NtR-f4-Ngc" secondAttribute="bottom" id="mnW-8y-yEM"/>
+                <constraint firstItem="NtR-f4-Ngc" firstAttribute="top" secondItem="tD5-7K-wCg" secondAttribute="top" constant="10" id="ocm-oN-Mkw"/>
+                <constraint firstItem="NtR-f4-Ngc" firstAttribute="leading" secondItem="tD5-7K-wCg" secondAttribute="leading" constant="30" id="xES-GJ-VYw"/>
+                <constraint firstItem="V2w-SB-8Hh" firstAttribute="leading" secondItem="NtR-f4-Ngc" secondAttribute="leading" constant="30" id="yce-Mo-PjT"/>
+            </constraints>
+            <connections>
+                <outlet property="aiPhotoCell" destination="nhd-tE-UJO" id="dPV-co-QLm"/>
+            </connections>
+            <point key="canvasLocation" x="346.56488549618319" y="89.788732394366207"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="icon_Ai_bg" width="237" height="77"/>
+        <image name="singlesome" width="101" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

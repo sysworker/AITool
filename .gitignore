@@ -1,0 +1,23 @@
+
+# Xcode
+*.xcscheme
+*.xcodeproj
+*.xcworkspace
+xcuserdata
+ 
+# User settings
+*.pbxuser
+ 
+# Xcode target settings
+*.xcconfig
+ 
+# Logs
+*.log
+ 
+# Temp files
+*.tmp
+
+# CocoaPods
+
+Pods
+*.lock

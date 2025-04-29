@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AIToolPhotoViewController" customModule="toolBox" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomImageView" destination="ggA-Ld-uXn" id="HEN-tu-SIh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" image="mainBackcx" translatesAutoresizingMaskIntoConstraints="NO" id="utG-GD-OT4">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="EA3078F2-E7E0-4FDB-A66A-0985269D9A02" translatesAutoresizingMaskIntoConstraints="NO" id="LSm-at-BdL">
+                    <rect key="frame" x="-2" y="200" width="393" height="299"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WiR-yr-jbA">
+                    <rect key="frame" x="15" y="59" width="40" height="40"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="backArr"/>
+                    <connections>
+                        <action selector="backAction:" destination="-1" eventType="touchUpInside" id="j5z-xt-isH"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AI 照片生成" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mUm-AP-U2T">
+                    <rect key="frame" x="15" y="119.00000000000001" width="144.33333333333334" height="34.666666666666671"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="29"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qq-LT-9Yo">
+                    <rect key="frame" x="15" y="163.66666666666666" width="358" height="81.333333333333343"/>
+                    <string key="text">通过我们先进的人工智能模型，去根据照片片并生成符合您需求的图像。测试你的创造力，生成高度逼真的图像，让你脱颖而出。
+</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ggA-Ld-uXn">
+                    <rect key="frame" x="20" y="471" width="353" height="242"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="242" id="WGy-nL-AVB"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nSh-wa-KjX">
+                    <rect key="frame" x="96.666666666666686" y="492" width="200" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="200" id="GZG-8c-67G"/>
+                        <constraint firstAttribute="height" constant="200" id="ee2-Qq-fGe"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="handheld"/>
+                    <connections>
+                        <action selector="toucchAIPhotoAction:" destination="-1" eventType="touchUpInside" id="0D0-kI-Jdf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aLj-Sa-jfB">
+                    <rect key="frame" x="20" y="753" width="353" height="60"/>
+                    <color key="backgroundColor" red="0.35374781468531469" green="0.27728911713286714" blue="0.79796765734265729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="hJZ-Nr-rTq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Generate Image"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="10"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="touchAction:" destination="-1" eventType="touchUpInside" id="JMd-6c-obE"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="qmp-Wv-WN6"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="utG-GD-OT4" secondAttribute="trailing" id="9b4-fq-R80"/>
+                <constraint firstItem="aLj-Sa-jfB" firstAttribute="leading" secondItem="qmp-Wv-WN6" secondAttribute="leading" constant="20" id="BK5-RW-8Cz"/>
+                <constraint firstItem="WiR-yr-jbA" firstAttribute="top" secondItem="qmp-Wv-WN6" secondAttribute="top" id="EDL-PT-sjU"/>
+                <constraint firstItem="aLj-Sa-jfB" firstAttribute="top" secondItem="ggA-Ld-uXn" secondAttribute="bottom" constant="40" id="IBO-56-Qlg"/>
+                <constraint firstItem="utG-GD-OT4" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KhX-EH-EbS"/>
+                <constraint firstAttribute="trailing" secondItem="4Qq-LT-9Yo" secondAttribute="trailing" constant="20" id="Lfx-Dy-xHK"/>
+                <constraint firstItem="nSh-wa-KjX" firstAttribute="centerX" secondItem="ggA-Ld-uXn" secondAttribute="centerX" id="PkR-R8-GFs"/>
+                <constraint firstItem="mUm-AP-U2T" firstAttribute="leading" secondItem="WiR-yr-jbA" secondAttribute="leading" id="QAT-O6-Ram"/>
+                <constraint firstItem="WiR-yr-jbA" firstAttribute="leading" secondItem="qmp-Wv-WN6" secondAttribute="leading" constant="15" id="WFY-7M-4Ir"/>
+                <constraint firstItem="4Qq-LT-9Yo" firstAttribute="top" secondItem="mUm-AP-U2T" secondAttribute="bottom" constant="10" id="Y1o-gb-KUi"/>
+                <constraint firstItem="qmp-Wv-WN6" firstAttribute="trailing" secondItem="ggA-Ld-uXn" secondAttribute="trailing" constant="20" id="ZSt-Rk-yNT"/>
+                <constraint firstItem="mUm-AP-U2T" firstAttribute="top" secondItem="WiR-yr-jbA" secondAttribute="bottom" constant="20" id="e4S-bC-oO4"/>
+                <constraint firstItem="4Qq-LT-9Yo" firstAttribute="leading" secondItem="mUm-AP-U2T" secondAttribute="leading" id="eZa-gr-7kE"/>
+                <constraint firstItem="qmp-Wv-WN6" firstAttribute="bottom" secondItem="ggA-Ld-uXn" secondAttribute="bottom" constant="105" id="kQm-6c-ceR"/>
+                <constraint firstAttribute="bottom" secondItem="utG-GD-OT4" secondAttribute="bottom" id="lqg-E9-a2f"/>
+                <constraint firstItem="nSh-wa-KjX" firstAttribute="centerY" secondItem="ggA-Ld-uXn" secondAttribute="centerY" id="rEC-hh-40h"/>
+                <constraint firstItem="qmp-Wv-WN6" firstAttribute="trailing" secondItem="aLj-Sa-jfB" secondAttribute="trailing" constant="20" id="seQ-cv-6Xk"/>
+                <constraint firstItem="utG-GD-OT4" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sgy-6M-R6B"/>
+                <constraint firstItem="ggA-Ld-uXn" firstAttribute="leading" secondItem="qmp-Wv-WN6" secondAttribute="leading" constant="20" id="zGW-Th-dzt"/>
+            </constraints>
+            <point key="canvasLocation" x="136.64122137404578" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="EA3078F2-E7E0-4FDB-A66A-0985269D9A02" width="1920" height="1440"/>
+        <image name="backArr" width="40" height="40"/>
+        <image name="handheld" width="600" height="600"/>
+        <image name="mainBackcx" width="371" height="812"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
